@@ -1,0 +1,20 @@
+while true do --move forward forever
+  if turtle.detect() and not turtle.detectUp() then
+    turtle.up() --only do this if there are no blocks above it 
+  elseif turtle.detect() and turtle.detectUp() and turtle.detectDown() then
+    turtle.turnRight() --if the turtle is trapped in a hole...
+    turtle.forward()  --attempt an ascape (might fail) 
+  elseif not turtle.detectDown() and turtle.detectUp() and turtle.detect() then
+    --we are trapped in a tree we need to go down a few and escape
+    for i = 0,4 do
+      turtle.down() --go down a bunch
+    end
+    while turtle.detect() do --turn until we face away
+      turtle.turnRight()
+    end
+  else
+    turtle.forward()  --all is well, proceed
+  end  
+
+end
+
