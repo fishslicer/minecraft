@@ -1,0 +1,13 @@
+turtle.turnRight()
+turtle.turnRight()
+for i = 0,9 do
+  turtle.forward()
+end
+turtle.turnLeft()--it will be on its left
+turtle.select(1)--select slot 1
+turtle.dig()
+turtle.suck()--retrieve ender pearls
+turtle.turnLeft()--heading back
+for i = 0,9 do
+  turtle.forward()
+end

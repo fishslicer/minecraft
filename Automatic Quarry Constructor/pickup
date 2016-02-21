@@ -1,0 +1,14 @@
+turtle.turnRight() --turn towards the blocks
+for i = 0,2 do
+  turtle.up()
+  turtle.dig() --dig up first 3  
+end
+turtle.turnLeft()
+turtle.down()
+turtle.down()
+turtle.down()
+for i = 0,9 do--move to next location
+  turtle.forward()
+end
+--shell.run("place")
+
