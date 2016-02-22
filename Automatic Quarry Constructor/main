@@ -1,4 +1,6 @@
-shell.run("pickup")--pickup first 3 blocks
-shell.run("place")--place those blocks
-shell.run("getAnchor")--retrieve final block and place it
-
+while true do --build quarries in a line forever.
+  shell.run("pickup")--pickup first 3 blocks
+  shell.run("place")--place those blocks
+  shell.run("getAnchor")--retrieve final block and place it
+  shell.run("countTime")--wait for it to finish (lazily)
+end

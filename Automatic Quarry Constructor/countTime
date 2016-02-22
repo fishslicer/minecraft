@@ -1,0 +1,9 @@
+time = 0
+while time < 800 do --change to while time != ? do
+  sleep(1)
+  time = time + 1
+  term.clear() 
+  print("Seconds: ", time)
+end
+term.clear()
+--print("Seconds / Loops: ", time)
