@@ -1,0 +1,7 @@
+print(peripheral.getNames("front"))
+c = 100
+while c ~= 0 do
+  c = c + 1
+  print(redstone.getInput("front"))
+  sleep(1)
+end

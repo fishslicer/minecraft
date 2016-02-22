@@ -1,2 +1,17 @@
 turtle.up()
 turtle.up()
+c = 0
+while c ~= 50 do --c will reach this if no items are picked up
+  for i = 1, 16 do    
+    if turtle.getItemCount(i)  > 0 then
+      c = 0 --if there is an item in the 
+      turtle.drop()
+    end
+  end
+  turtle.select(1)
+  c = c + 1 --increment c
+end
+print("Quarry is done.")
+sleep(5)
+turtle.down()
+turtle.down()
