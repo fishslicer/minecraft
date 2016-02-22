@@ -1,1 +1,4 @@
-shell.run("pickup")
+shell.run("pickup")--pickup first 3 blocks
+shell.run("place")--place those blocks
+shell.run("getAnchor")--retrieve final block and place it
+

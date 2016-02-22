@@ -1,0 +1,11 @@
+
+--this tests that the drone can
+--input pearls into a anchor and then
+--suck them back up
+turtle.place(1)
+turtle.select(9)
+print(turtle.drop())
+turtle.select(1)
+sleep(5)
+turtle.dig()
+turtle.suck(9)
