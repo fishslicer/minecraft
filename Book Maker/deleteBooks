@@ -1,0 +1,45 @@
+--deletes books when given the correct password
+passWord = "1337"
+while true do --program loop
+breakL = false
+while breakL == false do
+  term.clear()
+  print("Enter Password.")
+  if io.read() == passWord then
+    breakL = true
+  end
+end
+term.clear()
+chest = peripheral.wrap("forward") --wrap the chest
+--for i = 1,128 do
+  --local slot = chest.
+  --print(slot.name, " is in slot ", i)
+  --print(i)
+  --sleep(1)
+--end
+--i = 0
+--peripheral.wrap("forward")
+inv = 0
+for slot = 0,128 do
+  if inv == 16 then
+    inv = 1
+    turtle.select(inv)
+    turtle.suck()
+    turtle.turnLeft()
+    turtle.turnLeft()
+    for j = 1,16 do
+      turtle.select(j)
+      turtle.drop()
+    end
+    turtle.turnRight()
+    turtle.turnRight()
+  else
+    inv = inv + 1
+    turtle.select(inv)
+    turtle.suck()
+  end    
+end
+print("Job Complete.")
+
+
+end --end program loop

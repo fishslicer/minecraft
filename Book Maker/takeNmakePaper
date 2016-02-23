@@ -1,0 +1,21 @@
+
+for i = 1,16 do
+  turtle.select(i)
+  turtle.dropDown()
+end
+for i = 1,3 do
+  --if i  then
+    print("attempting to craft")
+    turtle.select(3)
+    turtle.craft(64)
+    --turtle.select(3)
+    --sleep(1)
+  --end
+  turtle.select(i)
+  turtle.suckDown()
+end
+--turtle.craft(64)
+for i = 1,3 do
+  turtle.select(i)
+  turtle.craft(1)
+end
